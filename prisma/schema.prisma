@@ -18,7 +18,7 @@ model Product {
   imagePath              String
   description            String
   isAvailableForPurchase Boolean                @default(true)
-  createAt               DateTime               @default(now())
+  createdAt              DateTime               @default(now())
   updatedAt              DateTime               @updatedAt
   orders                 Order[]
   downloadVerification   DownloadVerification[]
